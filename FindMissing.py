@@ -14,10 +14,10 @@ def find_missing_number(list):
 
 def findmissingnum2(list):
     length = len(list)
-    return ((length + 1) * (length + 2) // 2) - sum(list)
+    print((length + 1) * (length + 2) // 2) - sum(list)
 
 def main():
     find_missing_number(list)
-    print(findmissingnum2(list))
+    findmissingnum2(list)
 
 main()
