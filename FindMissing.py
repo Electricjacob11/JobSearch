@@ -1,4 +1,4 @@
-linst = [2, 1, 5, 4]
+list = [2, 1, 5, 4]
 
 def find_missing_number(linst):
     length = len(linst)
@@ -17,7 +17,7 @@ def findmissingnum2(linst):
     return ((length + 1) * (length + 2) // 2) - sum(linst)
 
 def main():
-    find_missing_number(linst)
-    print(findmissingnum2(linst))
+    find_missing_number(list)
+    print(findmissingnum2(list))
 
 main()
