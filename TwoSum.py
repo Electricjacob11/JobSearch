@@ -1,12 +1,13 @@
 from typing import List
 
 def twoSum(self, nums: List[int], target: int) -> List[int]:
-    num_to_index = {}
+    num_to_index = {} # Dictionary/hash map to store number and its index, automatically stores the index of the first occurrence of each number.
     
+    # Go through the list and check to see if we've seen the complement before
     for i, num in enumerate(nums):
-        complement = target - num
+        complement = target - num # Check to see what the other number needed to reach the desired sum is.
         if complement in num_to_index:
-            return [num_to_index[complement], i]
+            return [num_to_index[complement], i] #Return the indices of the two numbers that add up to the target.
         num_to_index[num] = i
     
     return []
